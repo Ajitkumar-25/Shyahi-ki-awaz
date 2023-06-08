@@ -1,0 +1,526 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: white;
+  color:black;
+  font-family: 'Noto Serif', serif;
+}
+body {
+  background-color: #25252a;
+  /* font-family: "Ubuntu", sans-serif; */
+  font-family: 'Times New Roman', Times, serif;
+  width: 100%;
+  min-height: 100vh;
+  color: #fff;
+  overflow-y: overlay;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: black;
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 100px;
+}
+.topHeadlines .right .topNews::-webkit-scrollbar {
+  width: 6px;
+}
+.topHeadlines .right .topNews::-webkit-scrollbar-thumb {
+  background-color: #777;
+}
+
+
+.topHeadlines {
+  padding: 10px 50px 50px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  /* background-color: black; */
+  color: white;
+  /* border-bottom: 2px solid white; */
+  border-bottom: 1px solid black;
+
+}
+
+
+#google_translate_element
+{
+  align-content: center;
+}
+.topHeadlines.left.title h2{
+  font-size: 50px;
+}
+.topHeadlines .left {
+  padding: 10px 30px;
+}
+.topHeadlines .left > .title {
+  font-size: 30px;
+  padding: 15px;
+  text-align: center;
+  color: black;
+  /* font-weight: bolder; */
+ 
+}
+.topHeadlines .left .img {
+  width: 100%;
+  height: 400px;
+  background-color: #a04;
+}
+.topHeadlines .left .img img {
+  width: 100%;
+  height: 100%;
+}
+.topHeadlines .left .text {
+  padding: 20px 15px 10px;
+}
+.topHeadlines .left .text .title a {
+  text-decoration: none;
+}
+.topHeadlines .left .text .title a h2 {
+  font-size: 20px;
+  /* color: white; */
+  color:black;
+  letter-spacing: 1px;
+  display: inline;
+  cursor: pointer;
+}
+.topHeadlines .left .text .title a h2:hover {
+  text-decoration: underline;
+}
+.topHeadlines .left .text .description {
+  font-size: 15px;
+  margin-top: 10px;
+  /* color: #aaa; */
+  color:black;
+  letter-spacing: 1px;
+}
+.topHeadlines .right {
+  padding: 10px;
+  width: 1005;
+  height: 650px;
+
+}
+.topHeadlines .right > .title {
+  font-size: 20px;
+  padding: 15px;
+  text-align: center;
+}
+.topHeadlines .right .topNews {
+  padding: 7px;
+  height: 85%;
+  border: 3px solid black;
+  border-radius: 8px;
+  overflow-y: scroll;
+}
+.topHeadlines .right .topNews .news {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  margin-bottom: 20px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+ 
+}
+
+.topHeadlines .right .topNews .news:hover{
+  transform: scale(1.05);
+}
+.topHeadlines .right .topNews .news .img {
+  width: 170px;
+  height: 100%;
+  max-height: 120px;
+  min-height: 90px;
+}
+.topHeadlines .right .topNews .news .img img {
+  width: 100%;
+  height: 100%;
+}
+.topHeadlines .right .topNews .news .text {
+  margin-inline: 10px;
+  display: flex;
+  align-items: center;
+}
+.topHeadlines .right .topNews .news .text .title a {
+  text-decoration: none;
+}
+.topHeadlines .right .topNews .news .text .title a p {
+  color: black;
+  display: inline;
+}
+.topHeadlines .right .topNews .news .text .title a p:hover {
+  text-decoration: underline;
+}
+.page2 {
+  width: 100%;
+  /* background-color: black; */
+  min-height: 100vh;
+  padding: 50px;
+  
+}
+.page2 .news {
+  padding: 20px 0;
+  border-bottom: 1px solid black;
+  
+}
+.page2 .news:last-child {
+  padding: 10px 0;
+  border-bottom: none;
+}
+.page2 .news > .title
+{
+    text-align: center;
+}
+
+.page2 .news > .title h2 {
+  font-size: 40px;
+  cursor: pointer;
+  display: inline;
+  /* color: white; */
+  color: black;
+  font-weight: bolder;
+  font-size: 50px;
+}
+.page2 .news > .title h2:hover {
+  text-decoration: underline;
+}
+.page2 .news .newsBox {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.page2 .news .newsBox .newsCard {
+  width: calc(100% / 5 - 20px); /*20px is the margin given to each card*/
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+
+}
+.page2 .news .newsBox .newsCard:hover
+{
+  transform: scale(1.05);
+}
+
+.page2 .news .newsBox .newsCard .img {
+  width: 100%;
+  height: 150px;
+  background-color: #a04;
+  border-radius: 5px;
+}
+.page2 .news .newsBox .newsCard .img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.page2 .news .newsBox .newsCard .text {
+  padding: 10px;
+}
+.page2 .news .newsBox .newsCard .text .title a {
+  text-decoration: none;
+}
+.page2 .news .newsBox .newsCard .text .title a p {
+  font-size: 15px;
+  /* color: #fff;
+   */
+  color: black;
+   display: inline;
+  cursor: pointer;
+}
+.page2 .news .newsBox .newsCard .title a p:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  width: 100%;
+  padding: 21px 50px 0px;
+  /* background-color: black; */
+  min-height: 200px;
+  /* border-bottom: 2px solid wheat; */
+  border-top: 1px solid black;
+}
+.footer .box {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+}
+.footer .box .left {
+  display: flex;
+  justify-content: space-around;
+  padding-right: 20px;
+}
+.footer .box .left .categories > p {
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-weight: bolder;
+}
+.footer .box .left .categories div {
+  margin-bottom: 15px;
+  width: max-content;
+}
+.footer .box .left .categories div p {
+  font-size: 20px;
+  color:black;
+  cursor: pointer;
+  padding: 0 10px;
+  border-left: 1px solid #fff0;
+  border-right: 1px solid #fff0;
+  transition: 0.3s;
+}
+.footer .box .left .categories div p:hover {
+  /* color: #fff; */
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+.footer .contact {
+  margin-left: 10px;
+
+}
+.footer .contact p {
+  font-size: 28px;
+  margin-bottom: 23px;
+  font-weight: bolder;
+}
+.footer .contact div {
+  font-size: 17px;
+  margin-bottom: 15px;
+  color: black;
+}
+.footer .icon {
+  margin-top: 20px;
+  padding: 20px;
+}
+.footer .icon a ion-icon {
+  font-size: 25px;
+  margin-right: 20px;
+  color:black;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.footer .icon  a ion-icon:hover {
+  color: blue;
+  transform: scale(1.2);
+}
+#instagram :hover {
+  transform: scale(1.2);
+  color: rgb(248, 74, 230);
+}
+#youtube :hover {
+  transform: scale(1.2);
+  color:red;
+}
+.footer .newsletter p {
+  font-size: 38px;
+  margin-bottom: 30px;
+  font-weight: bolder;
+}
+.footer .newsletter .email {
+  display: flex;
+}
+.footer .newsletter .email input {
+  width: 400px;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 20px;
+  border: 2px solid black;
+}
+.footer .newsletter .email button {
+  padding: 10px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  border-color:black;
+  border: 2px solid black;
+  color:black;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.footer .newsletter .email button:hover {
+  color:white;
+  background-color: blue;
+}
+.footer .copyrights {
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+  letter-spacing: 1px;
+  font-weight: bolder;
+}
+
+@media (max-width: 1024px) {
+  .topHeadlines .right .topNews .news .img {
+    width: 150px;
+  }
+  .topHeadlines .right .topNews .news .text .title a p {
+    font-size: 14px;
+  }
+  .page2 .news .newsBox .newsCard .img {
+    height: 120px;
+  }
+  .page2 .news .newsBox .newsCard .text {
+    padding: 5px;
+  }
+  .page2 .news .newsBox .newsCard .text .title a p {
+    font-size: 14px;
+  }
+  .footer .box .left .categories > p {
+    font-size: 25px;
+  }
+  .footer .contact p {
+    font-size: 25px;
+  }
+  .footer .newsletter p {
+    font-size: 25px;
+  }
+  .footer .newsletter .email input {
+    width: 300px;
+  }
+  .footer .newsletter .email button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  .footer .box .left .categories div p {
+    font-size: 18px;
+  }
+  .footer .contact div {
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  nav div.bar {
+    display: block;
+  }
+  nav ul {
+    opacity: 0;
+    position: absolute;
+    /* background-color: #0b0b11; */
+    flex-direction: column;
+    right: 0px;
+    padding: 30px 30px 10px;
+    text-align: center;
+    pointer-events: none;
+    border-radius: 10px;
+  }
+  nav ul.activeMenu {
+    opacity: 1;
+    pointer-events: all;
+  }
+  nav ul li {
+    margin: 10px 0;
+  }
+  .topHeadlines {
+    display: block;
+  }
+  .topHeadlines .right .topNews .news .img {
+    width: 220px;
+  }
+  .topHeadlines .right .topNews .news .text .title a p {
+    font-size: 18px;
+  }
+  .page2 .news .newsBox .newsCard {
+    width: calc(100% / 3 - 20px);
+  }
+  .footer .box {
+    grid-template-columns: none;
+  }
+  .footer .box .right {
+    grid-row-start: 1;
+    margin-bottom: 40px;
+  }
+  .footer .newsletter .email input {
+    width: 400px;
+  }
+  .footer .box .left {
+    justify-content: space-between;
+  }
+}
+@media (max-width: 600px) {
+  .logo {
+    font-size: 35px;
+  }
+  .topHeadlines .left {
+    padding: 10px 0px;
+  }
+  .topHeadlines .right .topNews .news .img {
+    width: 150px;
+  }
+  .topHeadlines .right .topNews .news .text .title a p {
+    font-size: 14px;
+  }
+  .page2 .news .newsBox .newsCard {
+    width: calc(100% / 2 - 20px);
+  }
+  .footer .newsletter .email input {
+    width: 300px;
+    font-size: 14px;
+  }
+  .footer .newsletter .email button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+  .footer .newsletter p {
+    font-size: 22px;
+  }
+  .footer .box .left .categories > p {
+    font-size: 22px;
+  }
+  .footer .contact p {
+    font-size: 22px;
+  }
+  .footer .copyrights {
+    font-size: 14px;
+  }
+}
+@media (max-width: 425px) {
+  nav div.bar {
+    right: 50px;
+  }
+  nav ul {
+    padding: 30px 10px 10px;
+  }
+  nav ul li {
+    margin: 5px 0px;
+  }
+  nav ul li a {
+    font-size: 14px;
+  }
+  .topHeadlines {
+    padding: 100px 20px 50px;
+  }
+  .page2 {
+    padding: 50px 20px;
+  }
+  .page2 .news .newsBox .newsCard {
+    width: 100%;
+    display: grid;
+  }
+  .page2 .news > .title h2 {
+    font-size: 30px;
+  }
+  .page2 .news .newsBox .newsCard .img {
+    height: 100%;
+    min-height: 150px;
+  }
+  .page2 .news .newsBox .newsCard .text .title a p {
+    font-size: 16px;
+  }
+  .footer .newsletter .email {
+    display: block;
+  }
+  .footer .newsletter .email button {
+    margin-top: 15px;
+  }
+}
